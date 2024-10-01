@@ -321,7 +321,7 @@
                             inside. The wafer is soft but crunchy.</p>
                     </li>
                 </ul>
-                <button class="team-button" type="button">Leave a review</button>
+                <button class="team-button" type="button" data-modal-open>Leave a review</button>
             </div>
         </section>
 
@@ -349,26 +349,36 @@
                     </ul>
                 </address>
             </div>
-            <nav class="page-nav">
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a class="footer-link" href="index.html">Home</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="footer-link" href="#how-made">How it’s made?</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="footer-link" href="#reviews">Chocolate is loved</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="footer-wraperr-bottom-block">
+                <nav class="footer-page-nav">
+                    <ul class="footer-page-nav-list">
+                        <li class="footer-page-nav-item">
+                            <a class="footer-page-nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer-page-nav">
+                            <a class="footer-page-nav-link" href="#how-made">How it’s made?</a>
+                        </li>
+                        <li class="footer-page-nav">
+                            <a class="footer-page-nav-link" href="#reviews">Chocolate is loved</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-form-wraperr">
+                    <form class="footer-form">
+                        <input class="footer-form-input" type="email" name="user-email" placeholder="Enter your email"
+                            required>
+                        <button class="footer-form-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- ==================== /Footer Section ==================== -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button class="modal-close-btn" type="button"><svg class="modal-close-icon" width="27" height="28">
+            <button class="modal-close-btn" type="button" data-modal-close><svg class="modal-close-icon" width="27"
+                    height="28">
                     <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg></button>
             <p class="modal-text">leave a review about <span class="modal-part-text">our chocolate</span></p>
@@ -413,6 +423,8 @@
             </form>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
